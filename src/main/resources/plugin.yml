@@ -1,0 +1,6 @@
+name: ShuffleGame
+version: '${project.version}'
+main: me.tauhp.shufflegame.ShuffleGame
+api-version: 1.20
+authors: [ Tauhp ]
+description: Plugin inspired by Czech Streamers/Youtubers Series Item Shuffle/Block Shuffle
