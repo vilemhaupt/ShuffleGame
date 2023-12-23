@@ -17,3 +17,19 @@ use-permissions: false #
 # shufflegame.join -> Join Game
 # shufflegame.leave -> Leave Game
 
+game-type: "random" # "random" for all items ingame (except blocked), "config" for setupped blocks
+game-world: "world" # setup world
+
+enabled-worlds:
+  world: true
+  nether: true
+  end: false
+
+blockshuffle-blocked:
+  - GRASS_BLOCK
+  - BEDROCK
+  - OBSIDIAN
+
+itemshuffle-blocked:
+  - NETHERITE_INGOT
+  - NETHERITE_BLOCK

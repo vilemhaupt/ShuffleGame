@@ -7,6 +7,7 @@ import org.bukkit.command.CommandSender;
 public class ShuffleCommand implements CommandExecutor {
 
     private final ShuffleGame plugin;
+    Utils utils;
 
     public ShuffleCommand(ShuffleGame plugin){
         this.plugin = plugin;
