@@ -9,6 +9,7 @@ public final class ShuffleGame extends JavaPlugin {
 
         saveDefaultConfig();
         getCommand("shufflegame").setExecutor(new ShuffleCommand(this));
+        getCommand("shufflegame").setTabCompleter(new ShuffleTabCompleter());
         getServer().getPluginManager().registerEvents(new BlockShuffleEvents(this), this);
         getServer().getPluginManager().registerEvents(new ItemShuffleEvents(this), this);
 
