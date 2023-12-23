@@ -7,8 +7,13 @@
 ╚═════╝░╚═╝░░╚═╝░╚═════╝░╚═╝░░░░░╚═╝░░░░░╚══════╝╚══════╝░╚═════╝░╚═╝░░╚═╝╚═╝░░░░░╚═╝╚══════╝
 #--------------------------------------------------------------------------------------------#
 
+game-setup: "config" # Use config for setupping here, Use "game" to setup ingame
+
 use-permissions: false #
 # Permissions:
 # shufflegame.start -> Start Game
 # shufflegame.setup -> Settings Game
-# shufflegame.stop -> Stop Game 
+# shufflegame.stop -> Stop Game
+# shufflegame.join -> Join Game
+# shufflegame.leave -> Leave Game
+
