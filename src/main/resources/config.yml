@@ -41,3 +41,4 @@ itemshuffle-end-game:
 
 blockshuffle-end-game:
   setSpectator: true
+
