@@ -19,7 +19,7 @@ public class ShuffleTabCompleter implements TabCompleter {
 
         if (args.length == 1) {
             // Seznam podpříkazů pro automatické dokončování
-            List<String> subCommands = Arrays.asList("settings", "start", "stop", "join", "leave", "pause");
+            List<String> subCommands = Arrays.asList("settings", "start", "stop", "join", "leave", "pause", "skip");
             List<String> completions = new ArrayList<>();
 
             for (String subCommand : subCommands) {

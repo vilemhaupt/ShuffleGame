@@ -16,3 +16,28 @@ use-permissions: false # if you want use permissions
 # shufflegame.join -> Join Game
 # shufflegame.leave -> Leave Game
 # shufflegame.pause -> Pause game
+# shufflegame.skip -> Skip block/item
+
+itemshuffle:
+  enabled: true
+  duration: 4 # 1 - 30, 2 - 60,  3 - 120, 4 - 300, 5 - 600
+  failsCount: 3 # How much fails before lost
+  canSkip: true
+
+blockshuffle:
+  enabled: true
+  duration: 4 # 1 - 30, 2 - 60,  3 - 120, 4 - 300, 5 - 600
+  failsCount: 3 # How much fails before lost
+  canSkip: true
+
+blockshuffle-blocked:
+  - GRASS_BLOCK
+
+itemshuffle-blocked:
+  - NETHERITE_INGOT
+
+itemshuffle-end-game:
+  setSpectator: true
+
+blockshuffle-end-game:
+  setSpectator: true

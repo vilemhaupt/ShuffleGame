@@ -1,5 +1,7 @@
     package me.tauhp.shufflegame;
 
+
+
     import org.bukkit.command.Command;
     import org.bukkit.command.CommandExecutor;
     import org.bukkit.command.CommandSender;
@@ -8,6 +10,8 @@
     public class ShuffleCommand implements CommandExecutor {
 
         private final ShuffleGame plugin;
+
+        Utils utils;
 
         public ShuffleCommand(ShuffleGame plugin) {
             this.plugin = plugin;
@@ -58,6 +62,9 @@
                     case "pause":
                         permission = "shufflegame.pause";
                         break;
+                    case "skip":
+                        permission = "shufflegame.skip";
+                        break;
                     default:
                         break;
                 }
@@ -89,6 +96,9 @@
                 case "pause":
                     player.sendMessage("Pause command logic goes here.");
                     break;
+                case "skip":
+                    player.sendMessage("Skip command logic goes here.");
+                    break;
                 default:
                     sendAvailableCommands(player);
                     break;
@@ -98,13 +108,14 @@
         }
 
         private void sendAvailableCommands(Player player) {
-            player.sendMessage("Available commands:");
-            player.sendMessage("Autor: Tauhp");
-            player.sendMessage("/shufflegame settings");
-            player.sendMessage("/shufflegame start");
-            player.sendMessage("/shufflegame stop");
-            player.sendMessage("/shufflegame join");
-            player.sendMessage("/shufflegame leave");
-            player.sendMessage("/shufflegame pause");
+            player.sendMessage(Utils.color("&3&lShuffle&b&lGame"));
+            player.sendMessage(Utils.color("&7Author: &aTauhp"));
+            player.sendMessage(Utils.color("&7/shufflegame &asettings &r-> &bOpen GUI Settings"));
+            player.sendMessage(Utils.color("&7/shufflegame &astart &r-> &bStart game"));
+            player.sendMessage(Utils.color("&7/shufflegame &astop &r-> &bStop game"));
+            player.sendMessage(Utils.color("&7/shufflegame &ajoin &r-> &bJoin game"));
+            player.sendMessage(Utils.color("&7/shufflegame &aleave &r-> &bLeave game"));
+            player.sendMessage(Utils.color("&7/shufflegame &apause &r-> &bPause game"));
+            player.sendMessage(Utils.color("&7/shufflegame &askip &r-> &bSkip Block/Item"));
         }
     }
